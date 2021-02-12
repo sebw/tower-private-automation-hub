@@ -1,3 +1,2 @@
 collections:
   - name: ansible.tower
-    source: https://towerhub.work.swa/api/automation-hub/
