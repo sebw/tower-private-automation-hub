@@ -1,0 +1,16 @@
+---
+- name: demo private automation hub
+  hosts: localhost
+  gather_facts: false
+  collections:
+  - ansible.tower
+
+  tasks:
+  - name: Create tower organization
+    tower_organization:
+      name: "Foo"
+      description: "Foo bar organization"
+      state: present
+      tower_host: https://tower1.work.swa
+      tower_username: admin
+      tower_password: redhat
